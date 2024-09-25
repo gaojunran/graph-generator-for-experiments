@@ -53,6 +53,7 @@ def draw(input_file: str, sheet_name: str, colomns_index: tuple[int] | list[int]
 
 	font_path = 'resources/times.ttf'
 	font_prop = fm.FontProperties(fname=font_path)
+	fm.fontManager.addfont(font_path)   # for linux
 	sns.set(font=font_prop.get_name())
 
 	# 调用绘图函数
